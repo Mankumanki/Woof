@@ -1,0 +1,77 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    background-color: rgba(14, 14, 27, 0.903);
+}
+
+.nav-link:hover {
+    color: #ff4c68 !important;
+}
+
+.Create {
+    background-image: linear-gradient(300deg,
+            #00bfff,
+            #ff4c68,
+            #ef8172);
+
+    border: none;
+}
+
+.Create:hover {
+    background-image: linear-gradient(300deg, #00bfffb0, #ff4c68b0, #ef8172b0);
+}
+
+@keyframes tilt-shaking {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(0eg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.FeatureImg1{
+    animation: tilt-shaking 4s ease infinite;
+}
+
+.TopContainer{
+    margin-top: 1%;
+    background-image: url(../images/wal.jpg);
+    background-size: contain;
+    border-top: 0.5px solid gray;
+}
+
+.footerContainer{
+    background-image:url(../images/wal.jpg);
+    background-size: contain;
+}
+
+@media(width<768px) {
+    .FeatureMedia {
+        justify-content: center;
+    }
+
+    .FeatureImg {
+        transform: rotate(0deg) !important;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+}
